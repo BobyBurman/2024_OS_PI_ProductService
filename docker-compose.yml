@@ -1,0 +1,16 @@
+#Using docker img for getting mongo db instance which we can use if we don't have mongodb loccally installed. I have locally will not use it
+version: '4'
+services:
+   mongodb:
+      image: mongo:7.0.5
+      container_name: mongodb
+      ports:
+         - "27017:27017"
+      environment:
+         MONGO_INITDB_ROOT_USERNAME: root
+         MONGO_INITDB_ROOT_PASSWORD: password
+         MONGO_INITDB_DATABASE: product-service
+      volumes:
+         - ./data:/data/db  
+      
+
