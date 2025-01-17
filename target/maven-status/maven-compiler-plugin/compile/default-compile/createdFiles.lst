@@ -1,0 +1,8 @@
+com\ospi\product\ProductServiceApplication.class
+com\ospi\product\controller\productController.class
+com\ospi\product\model\Product.class
+com\ospi\product\dto\ProductRequest.class
+com\ospi\product\dto\ProductResponse.class
+com\ospi\product\service\impl\productServiceImpl.class
+com\ospi\product\repository\ProductRepository.class
+com\ospi\product\service\productService.class

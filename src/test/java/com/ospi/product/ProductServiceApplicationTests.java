@@ -9,6 +9,8 @@ import org.springframework.boot.testcontainers.service.connection.ServiceConnect
 import org.springframework.context.annotation.Import;
 import org.testcontainers.containers.MongoDBContainer;
 
+
+
 import io.restassured.RestAssured;
 
 
@@ -60,6 +62,7 @@ class ProductServiceApplicationTests {
 		// Configuring RestAssured to encode the body as JSON
 	    RestAssuredConfig config = RestAssured.config()
 	        .encoderConfig(new EncoderConfig().encodeContentTypeAs("application/json", ContentType.JSON));
+	    
 	    
 		RestAssured.given()
 				.config(config)
